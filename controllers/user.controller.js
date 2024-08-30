@@ -97,7 +97,7 @@ export const login = async (req, res) => {
                 httpOnly: true,
                 sameSite: 'none',
                 secure: true,
-                domain: "https://job-portal-backend-5utw.onrender.com/api/v1"
+                domain: "job-portal-backend-5utw.onrender.com"
             })
             .json({
                 message: `Welcome back ${user.fullname}`,

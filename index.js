@@ -12,10 +12,6 @@ dotenv.config({});
 
 const app = express();
 
-// Middleware
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(cookieParser());
 
 const allowedOrigins = [
     'http://localhost:5173',
@@ -34,6 +30,10 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
+// Middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
 
 const PORT = process.env.PORT || 3000;
 
