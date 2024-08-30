@@ -97,7 +97,7 @@ export const login = async (req, res) => {
                 httpOnly: true,
                 sameSite: 'none',
                 secure: true,
-                domain: "https://job-portal-frontend-ecru.vercel.app" // Set this to your actual frontend domain
+                domain: "https://job-portal-backend-5utw.onrender.com/api/v1"
             })
             .json({
                 message: `Welcome back ${user.fullname}`,
